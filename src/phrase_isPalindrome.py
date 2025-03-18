@@ -3,10 +3,16 @@ import string
 
 
 def filter_phrase(phrase: str) -> str:
+    """
+        This function takes a string and returns the string with only lowercased alphanumerics characters.
+    """
     return re.sub(r'[^a-zA-Z0-9]', '', phrase).lower()
 
 
 def phrase_isPalindrome(phrase: str) -> bool:
+    """
+        This function takes a string and returns a boolean checking if input string is a palindrome 
+    """
     phrase = filter_phrase(phrase)
 
     n = len(phrase)
