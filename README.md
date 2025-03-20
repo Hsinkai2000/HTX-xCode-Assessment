@@ -95,6 +95,7 @@ pytest -v tests
 - Use two pointer technique to check if phrase is palindrome. Break out once detect pointers differ in value.
 
 **Time Complexity:** O(n), Only iterates through the filter once and the phrase another time to find result in O(2n) time, where **n** is the length of phrase.
+
 **Space Complexity:** O(1), uses the same input string without creating new phrases.
 
 ---
@@ -112,6 +113,7 @@ pytest -v tests
   - Even length: forward value = backward value
 
 **Time Complexity:** O(log n), processing the input digit by digit, dividing by 10, the number of iterations in the loop is proportional to the number of digits, where **n** is input number.
+
 **Space Complexity:** O(1), uses a few integer variables to track with no additional data structures.
 
 ---
